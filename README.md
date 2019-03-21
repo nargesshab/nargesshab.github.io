@@ -1,1 +1,1 @@
-my Portfolio: The journey of me being a designer
+My Portfolio: The journey of me being a designer
