@@ -3,7 +3,6 @@
 }
 
 body {
-<<<<<<< HEAD
   background-color: ##ECE6DE;
   color: white;
   margin: 0;
@@ -67,7 +66,7 @@ body {
 
   width: 20%;
   height: 3%;
-  position: fixed;
+  position: absolute;
   
   background-color: black;
   transform: translateY(900%);
