@@ -33,7 +33,99 @@ Body {
   justify-content: center;
   align-items: center;
 }
+a {
+  text-decoration:none;
+  color: black;
+  font-size: 1em;
+}
+li {
+  list-style:none;
+  color: black;
+}
+/* .main-nav {
+  width:100vh;    
+  height:60px;
 
+  padding: 10px;
+  display: flex;
+  clear: both;
+  float: left;
+
+  transform-origin: left top;
+  border: 1px solid black;
+  transform-origin: left top;
+  transform:rotate(-90deg) translateX(-100%);
+}
+
+ul.nav li {    
+  margin:35px 20px;
+  float:right;
+  height:100%;
+  line-height:45px;  
+} */
+
+.about {
+  min-height: 100%;
+  min-width: 100%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color:#ECE6DE;
+  background-color: black;
+}
+.about a {
+  color: black;
+  text-decoration: none;
+}
+h1 {
+  font-size: 2em;
+  padding: 50px 30px 30px 50px;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  color: #ECE6DE;
+}
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: black;
+}
+
+/* Control the right side */
+.right {
+  right:auto;
+  min-width: 50%;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.arrow.white {
+  display: inline-flex;
+  max-width: 255px;
+  max-height: 255px;
+  transform: rotateZ(-90deg);
+  justify-content: flex-end;
+  margin-top: 80%;
+  margin-right: 80%;
+}
+
+/* these are the images style */
 .accordion {
   
   min-width: 300px;
@@ -131,21 +223,23 @@ Body {
 .accordion article:hover section, .accordion article:focus-within section {
   width: 8%;
 }
-
- .accordion article:hover section:hover,
+/* .accordion article section:focus {
+  outline: none;
+} */
+.accordion article:hover section:hover,
 .accordion article section:focus, .accordion article:focus-within section:focus {
   width: 8%;
 }
 .accordion article:hover section:hover a,
 .accordion article section:focus a, .accordion article:focus-within section:focus a {
   background: rgba(0, 0, 0, 0.4);
-} 
- .accordion article:hover section:hover a *,
+}
+/* .accordion article:hover section:hover a *,
 .accordion article section:focus a *, .accordion article:focus-within section:focus a * {
   opacity: 1;
   transform: translateX(0);
-} 
- .accordion article:hover section {
+} */
+.accordion article:hover section {
   width: 8% !important;
   
 }
@@ -179,7 +273,7 @@ Body {
     transition: none;
   }
 
-} 
+}
 
 /* the page of Digital typography */
 
