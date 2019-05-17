@@ -1,0 +1,312 @@
+
+* {
+  box-sizing: border-box;
+}
+
+
+Body {
+  margin: 0 auto;
+}
+
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+.scroll-horizontal-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: scroll;
+}
+
+.screen {
+  width: auto;
+  height: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration:none;
+  color: black;
+  font-size: 1em;
+}
+li {
+  list-style:none;
+  color: black;
+}
+.about {
+  min-height: 100%;
+  min-width: 100%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color:#fafaf8;
+  background-color: black;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 700;
+  overflow: hidden;
+  
+  min-width: 400px;
+  height: 100vh;
+  position: relative;
+  background-color: #fafaf8;
+}
+
+.poster {
+  display: grid;
+  grid-gap: 0.2em;
+  grid-template-columns: 1fr 6fr 1fr 2fr 0.5fr 8fr;
+  grid-template-rows: 3fr 1fr 3fr 1fr 3fr;
+  grid-template-areas: ". .    supertitle .     subtitle ." ". info supertitle title subtitle ." ". .    .          title subtitle ." ". .    .          title subtitle ." ". .    .          .     .        .";
+  width: 720px;
+  height: 700px;
+  position: absolute;
+  top: 85%;
+  left: -30%;
+  transform-origin: center center;
+  transform: rotate(45deg) translate(-50.5%, -50%);
+}
+
+.info {
+  grid-area: info;
+  font-size: 0.65em;
+  line-height: 1.25;
+  align-self: end;
+  justify-self: end;
+  padding-right: 0.95em;
+  font-weight: 500;
+}
+
+p {
+  margin: 0;
+}
+
+.supertitle {
+  grid-area: supertitle;
+  writing-mode: vertical-lr;
+  text-orientation: sideways;
+  transform: scaleY(-1) scaleX(-1);
+  font-size: 1.03em;
+}
+
+.black-band {
+  background: black;
+  grid-column: 4 / 5;
+  grid-row: 1 / 6;
+  transform: translateY(100%);
+  animation: black 1s ease-in forwards;
+}
+
+@-webkit-keyframes black {
+  100% {
+   transform: translateY(0);
+  }
+}
+
+@keyframes black {
+  100% {
+    transform: translateY(0);
+  }
+}
+.title {
+  grid-area: title;
+  color: white;
+  text-align: right;
+  writing-mode: vertical-lr;
+  text-orientation: sideways;
+  transform: scale(-1);
+  font-size: 3em;
+  padding: 0 0.2em;
+  line-height: 0.1;
+  justify-self: end;
+  font-weight: 900;
+}
+
+.subtitle {
+  grid-area: subtitle;
+  writing-mode: vertical-lr;
+  text-orientation: sideways;
+  transform: scale(-1);
+  font-size: 1.03em;
+  padding-top: 0.4em;
+  letter-spacing: 0.01em;
+}
+
+.red-band {
+  grid-column: 1 / 7;
+  grid-row: 4 / 5;
+  background: rgb(223, 221, 221);
+  transform: translateX(100%);
+  animation: red-band 1.3s forwards ease-in;
+}
+
+@-webkit-keyframes red-band {
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes red-band {
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+
+h1 {
+  font-size: 2em;
+  padding: 50px 30px 30px 50px;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  color: #ECE6DE;
+}
+
+h3{
+  font-size: .8em;
+  text-align: right;
+  font-family: Montserrat, sans-serif;
+  color: #ECE6DE;
+}
+
+h4 {
+  font-size: .8em;
+  text-align: left;
+  font-family: Montserrat, sans-serif;
+  color: #ECE6DE;
+}
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: black;
+}
+
+/* Control the right side */
+.right {
+  right:auto;
+  min-width: 50%;
+}
+
+/* the content to be centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.arrow.white {
+  display: inline-flex;
+  max-width: 255px;
+  max-height: 255px;
+  transform: rotateZ(-90deg);
+  justify-content: flex-end;
+  margin-top: 80%;
+  margin-right: 80%;
+}
+
+/* these are the images style */
+.accordion,
+.accordion2 {
+  display: inline-flex;
+}
+.part {
+  /* width: 100vw; */
+  height: 100vh;
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+  
+}
+.part .box {
+  background-color: #EA4335;
+  width: 200px;
+  height: 100%;
+  background-image: url(../img/1.jpg);
+  background-position:left;
+  background-size: cover;
+
+}
+
+.part .box1 {
+  background-color: #EA4335;
+  width: 200px;
+  height: 100%;
+  background-image: url(../img/ux-ui.jpg);
+  background-position:left;
+  background-size: cover;
+}
+
+/* the page of Digital typography */
+
+.part .box5 {
+  background-color: #EA4335;
+  width: 200px;
+  height: 100%;
+  background-image: url(../img/6.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+.part .box6 {
+  background-color: #EA4335;
+  width: 200px;
+  height: 100%;
+  background-image: url(../img/7.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+.part .box7 {
+  background-color: #EA4335;
+  width: 200px;
+  height: 100%;
+  background-image: url(../img/8.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+.part .box8 {
+  background-color: #EA4335;
+  width: 200px;
+  height: 100%;
+  background-image: url(../img/9.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  
+}
+
+
