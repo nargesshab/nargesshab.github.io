@@ -33,7 +33,6 @@
   display: block;
   width: 10px;
   height: 2px;
-  background: #ecf445;
   position: absolute;
   bottom: 18%;
   left: 0;
@@ -89,7 +88,6 @@
   right: auto;
   left: 20px;
   z-index: 3;
-  background: #ecf445;
   border: none;
   outline: none;
   width: 40px;
@@ -194,7 +192,6 @@
   background: #ccc;
 }
 .menu__item:nth-child(2) {
-  background-color: #ecf445;
 }
 .menu__item:nth-child(3) {
   background-color: #272727;
