@@ -42,28 +42,6 @@ li {
   list-style:none;
   color: black;
 }
-/* .main-nav {
-  width:100vh;    
-  height:60px;
-
-  padding: 10px;
-  display: flex;
-  clear: both;
-  float: left;
-
-  transform-origin: left top;
-  border: 1px solid black;
-  transform-origin: left top;
-  transform:rotate(-90deg) translateX(-100%);
-}
-
-ul.nav li {    
-  margin:35px 20px;
-  float:right;
-  height:100%;
-  line-height:45px;  
-} */
-/* The about page styles */
 .about {
   min-height: 100%;
   min-width: 100%;
@@ -237,7 +215,7 @@ h4 {
   min-width: 50%;
 }
 
-/* If you want the content centered horizontally and vertically */
+/* the content to be centered horizontally and vertically */
 .centered {
   position: absolute;
   top: 50%;
@@ -256,7 +234,8 @@ h4 {
 }
 
 /* these are the images style */
-.accordion {
+.accordion,
+.accordion2 {
   display: inline-flex;
 }
 .part {
@@ -286,39 +265,48 @@ h4 {
   width: 200px;
   height: 100%;
   background-image: url(../img/ux-ui.jpg);
-  background-position:center;
+  background-position:left;
   background-size: cover;
 }
 
 /* the page of Digital typography */
 
-.accordion2 article section:nth-child(1) {
-  /*fix image path*/
+.part .box5 {
+  background-color: #EA4335;
+  width: 200px;
+  height: 100%;
   background-image: url(../img/6.jpg);
   background-repeat: no-repeat;
   background-position:center;
   background-size: cover;
 }
-.accordion2 article section:nth-child(2) {
-/*fix image path*/
+.part .box6 {
+  background-color: #EA4335;
+  width: 200px;
+  height: 100%;
   background-image: url(../img/7.jpg);
   background-repeat: no-repeat;
   background-position:center;
   background-size: cover;
 }
-.accordion2 article section:nth-child(3) {
-	/*fix image path*/
+.part .box7 {
+  background-color: #EA4335;
+  width: 200px;
+  height: 100%;
   background-image: url(../img/8.jpg);
   background-repeat: no-repeat;
   background-position:center;
   background-size: cover;
 }
-.accordion2 article section:nth-child(4) {
-	/*fix image path*/
+.part .box8 {
+  background-color: #EA4335;
+  width: 200px;
+  height: 100%;
   background-image: url(../img/9.jpg);
   background-repeat: no-repeat;
   background-position:center;
   background-size: cover;
   
 }
+
 
